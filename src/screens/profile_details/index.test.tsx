@@ -18,7 +18,7 @@ jest.mock('next/router', () => ({
       dtag: '@dtag',
     },
     // mock replace function
-    replace: '/',
+    replace: jest.fn(() => '/'),
   }),
 }));
 
@@ -26,6 +26,10 @@ jest.mock('@components', () => ({
   Layout: (props) => <div id="Layout" {...props} />,
   LoadAndExist: (props) => <div id="LoadAndExist" {...props} />,
   DesmosProfile: (props) => <div id="DesmosProfile" {...props} />,
+}));
+
+jest.mock('./components', () => ({
+  Connections: (props) => <div id="Connections" {...props} />,
 }));
 
 // ==================================
@@ -53,7 +57,6 @@ describe('screen: ProfileDetails', () => {
     });
 
     const mockClient = createMockClient();
-    // console.log('mockClient', mockClient);
 
     let component;
     renderer.act(() => {
@@ -64,14 +67,10 @@ describe('screen: ProfileDetails', () => {
           </MockTheme>
         </ApolloProvider>,
       );
-      console.log('component 1 =>', component);
-      console.log('tree 1 => ', component.toJSON());
     });
     await wait();
 
     const tree = component.toJSON();
-    // console.log('component  => ', component);
-    // console.log('tree => ', tree);
     expect(tree).toMatchSnapshot();
   });
 
