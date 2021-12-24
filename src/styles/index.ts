@@ -9,10 +9,7 @@ import {
 } from './theme';
 
 export {
-  lightTemplate,
   darkTemplate,
-  deuteranopiaTemplate,
-  tritanopiaTemplate,
   // lightTheme,
   // darkTheme,
   // deuteranopiaTheme,

@@ -74,7 +74,7 @@ const Menu = (props: MenuProps) => {
       {/* ================================== */}
       {/* Theme Drawer */}
       {/* ================================== */}
-      <Drawer
+      {/* <Drawer
         anchor="bottom"
         open={themeOptions.drawerOpen}
         onClose={themeOptions.toggleDrawer}
@@ -93,7 +93,7 @@ const Menu = (props: MenuProps) => {
               ))
             }
         </div>
-      </Drawer>
+      </Drawer> */}
       {/* ================================== */}
       {/* Main Content */}
       {/* ================================== */}

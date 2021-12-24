@@ -1,7 +1,7 @@
 import Color from 'color';
 
-const backgroundDefault = '#0A0A0A';
-const surfaceOne = '#131316';
+const backgroundDefault = '#101827';
+const surfaceOne = '#1f2937';
 const surfaceTwo = '#19191D';
 const fontOne = '#E6E6E6';
 const fontTwo = '#AAAAAB';
@@ -45,14 +45,14 @@ export const darkThemeOverride = {
         fontFour: '#999999',
       },
       primaryData: {
-        one: '#af2929',
-        two: '#b44516',
-        three: '#b14237',
-        four: '#b16919',
+        one: '#22D3EE',
+        two: '#fb923c',
+        three: '#fbbf24',
+        four: '#A78BFA',
       },
       results: {
-        pass: '#198a65',
-        fail: '#b12a34',
+        pass: '##F87171',
+        fail: '##34D399',
       },
     },
   },
