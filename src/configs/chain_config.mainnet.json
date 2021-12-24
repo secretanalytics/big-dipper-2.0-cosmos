@@ -1,23 +1,23 @@
 {
-  "title": "Desmos Block Explorer",
-  "network": "desmos-mainnet-1",
+  "title": "Secret Block Explorer",
+  "network": "secret-4",
   "icon": "https://raw.githubusercontent.com/forbole/big-dipper-assets/master/desmos/icon.svg?sanitize=true",
   "logo": {
     "default": "https://raw.githubusercontent.com/forbole/big-dipper-assets/master/desmos/logo.svg?sanitize=true"
   },
   "prefix": {
-    "consensus": "desmosvalcons",
-    "validator": "desmosvaloper",
-    "account": "desmos"
+    "consensus": "secretvalcons",
+    "validator": "secretvaloper",
+    "account": "secret"
   },
   "genesis": {
     "time": "2021-07-13T08:00:00",
-    "height": 1
+    "height": 813800
   },
-  "primaryTokenUnit": "udsm",
+  "primaryTokenUnit": "uscrt",
   "tokenUnits": {
-    "udsm": {
-      "display": "dsm",
+    "uscrt": {
+      "display": "uscrt",
       "exponent": 6
     }
   },
